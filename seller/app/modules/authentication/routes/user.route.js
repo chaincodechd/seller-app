@@ -4,9 +4,6 @@ const router = express.Router();
 const multer = require('multer');
 const upload = multer({
     storage: multer.memoryStorage(),
-    limits: {
-        fileSize: 2 * 1024 * 1024, // Max file size (2MB)
-    },
 });
 
 import UserController from '../controllers/user.controller';
